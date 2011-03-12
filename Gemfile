@@ -6,6 +6,7 @@ gem 'rails', '3.0.5'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'imagesize'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -29,3 +30,20 @@ gem 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
+#
+#
+ group :development, :test do
+   gem 'rspec-rails', '>= 2.1.0'
+   gem 'autotest'
+   gem "mongrel", ">= 1.2.0.pre2"
+   gem 'jasmine'
+ end
+
+ group :cucumber do
+   gem 'cucumber', '>=0.10.0'
+   gem 'cucumber-rails', '>=0.3.2'
+   gem 'database_cleaner', '>=0.5.0'
+   gem 'guard-cucumber', :git => 'https://github.com/jcnnghm/guard-cucumber.git' 
+   gem 'selenium-client'
+   gem 'webrat', :git => 'http://github.com/notch8/webrat.git'
+ end
