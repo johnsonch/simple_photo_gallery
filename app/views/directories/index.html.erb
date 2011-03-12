@@ -1,0 +1,4 @@
+<% @directories.each do |dir| %>
+  <%=h dir.basename %><br />
+  <%= link_to dir.basename, {:controller => "files", :action => "index", :directory_path => dir.basename} %>  
+<% end %>
