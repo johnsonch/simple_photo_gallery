@@ -33,7 +33,7 @@ gem 'imagesize'
 #
 #
  group :development, :test do
-   gem 'rspec-rails', '>= 2.1.0'
+   gem 'rspec-rails', '>= 2.5.0'
    gem 'autotest'
    gem "mongrel", ">= 1.2.0.pre2"
    gem 'jasmine'
